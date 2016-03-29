@@ -16,10 +16,13 @@ sim = 0;
 %
 %
 
+sigmaSq = sigma ^ 2;
 
+xdiff = (x1-x2);
 
+sumSquares = xdiff'*xdiff;
 
-
+sim = exp((-1/(2 *sigmaSq))*sumSquares);
 
 % =============================================================
     
