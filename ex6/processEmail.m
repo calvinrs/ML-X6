@@ -98,7 +98,17 @@ while ~isempty(email_contents)
     %
 
 
-
+    %loop over?
+    for k = 1:length(vocabList)
+    
+      if strcmp(vocabList{k},str) == 1
+        word_indices = [word_indices ; k];
+        %can exit loop
+        k = length(vocabList);
+      end   
+    
+    
+    end 
 
 
 
